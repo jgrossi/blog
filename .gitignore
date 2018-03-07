@@ -1,0 +1,5 @@
+.DS_Store
+.env
+vendor
+public/wp-content/uploads
+public/wp-content/cache
