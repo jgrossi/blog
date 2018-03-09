@@ -99,3 +99,13 @@ Text Domain: twenty-fifteen-child
 	font-size: 1.3rem;
 }
 
+/* Smaller feature image high */
+.hentry.has-post-thumbnail {
+    padding-top: 7.6923%;
+}
+
+.post-thumbnail img {
+    width: 87%;
+}
+
+
