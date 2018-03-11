@@ -55,12 +55,13 @@ function twentyfifteen_post_thumbnail() {
 function my_theme_post_date()
 {
 	$published = get_the_date();
-	$str = sprintf('Published on %s. ', $published);
 	$updated = get_the_modified_date();
-
-	if ($published !== $updated) {
-		$str .= sprintf('Updated on %s.', $updated);
-	}
-
-	printf('<div class="post-date">%s</div>', $str);
+	?>
+	<div class="post-date">
+		Published on <?php echo $published ?>.
+		<?php if (strtotime($updated) > strtotime($published)): ?>
+			Updated on <?php echo $updated ?>.
+		<?php endif; ?>
+	</div>
+	<?php
 }
