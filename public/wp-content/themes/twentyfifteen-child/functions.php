@@ -52,14 +52,14 @@ function twentyfifteen_post_thumbnail() {
 /**
  * Display the post published date and updated date if present.
  */
-function my_theme_post_date()
+function my_theme_post_date($show_updated = false)
 {
 	$published = get_the_date();
 	$updated = get_the_modified_date();
 	?>
 	<div class="post-date">
 		Published on <?php echo $published ?>.
-		<?php if (strtotime($updated) > strtotime($published)): ?>
+		<?php if ($show_updated && strtotime($updated) > strtotime($published)): ?>
 			Updated on <?php echo $updated ?>.
 		<?php endif; ?>
 	</div>
