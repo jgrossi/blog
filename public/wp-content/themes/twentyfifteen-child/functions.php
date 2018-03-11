@@ -48,3 +48,19 @@ function twentyfifteen_post_thumbnail() {
 
 	<?php endif; // End is_singular()
 }
+
+/**
+ * Display the post published date and updated date if present.
+ */
+function my_theme_post_date()
+{
+	$published = get_the_date();
+	$str = sprintf('Published on %s. ', $published);
+	$updated = get_the_modified_date();
+
+	if ($published !== $updated) {
+		$str .= sprintf('Updated on %s.', $updated);
+	}
+
+	printf('<div class="post-date">%s</div>', $str);
+}
