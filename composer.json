@@ -1,4 +1,14 @@
 {
+    "description": "My personal blog source code.",
+    "homepage": "https://github.com/jgrossi/blog",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Junior Grossi",
+            "email": "juniorgro@gmail.com",
+            "homepage": "https://blog.jgrossi.com"
+        }
+    ],
     "repositories": [
         {
             "type": "composer",
