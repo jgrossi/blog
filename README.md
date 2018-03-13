@@ -34,6 +34,10 @@ I also created a new `.post-date` section, just below the title, to display the 
 
 I changed how the featured image is displayed. I overrided the `twentyfifteen_post_thumbnail()` function on `twentyfifteen-child/functions.php` to send the image to below the title, using by default the `large` size, adding also some custom CSS rules.
 
+## Next steps
+
+Now I have to configure all WordPress plugins to be installed using Composer as well. Looking forward to do that.
+
 ## Licence
 
 [MIT License](http://jgrossi.mit-license.org/) © Junior Grossi
