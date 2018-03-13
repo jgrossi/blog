@@ -12,6 +12,8 @@ This blog uses Composer for dependencies. The only dependency the blog has for n
 composer install
 ```
 
+> All plugins and the base theme are installed using Composer as well. So you won't find the base theme and plugins installed in `wp-content/themes` and `wp-content/plugins` folders.
+
 ### Configuration
 
 Rename `.env.example` to `.env` and  onfigure it with your own credentials, like database, URL, etc.
@@ -33,10 +35,6 @@ I also created a new `.post-date` section, just below the title, to display the 
 ### Behavior changes
 
 I changed how the featured image is displayed. I overrided the `twentyfifteen_post_thumbnail()` function on `twentyfifteen-child/functions.php` to send the image to below the title, using by default the `large` size, adding also some custom CSS rules.
-
-## Next steps
-
-Now I have to configure all WordPress plugins to be installed using Composer as well. Looking forward to do that.
 
 ## Licence
 
