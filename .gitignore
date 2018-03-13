@@ -3,3 +3,5 @@
 vendor
 public/wp-content/uploads
 public/wp-content/cache
+public/wp-content/plugins
+public/wp-content/themes/twentyfifteen
