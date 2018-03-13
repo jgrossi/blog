@@ -6,4 +6,4 @@ deploy:
 	--exclude=.DS_Store \
 	--exclude=public/wp-content/uploads \
 	--exclude=public/wp-content/cache \
-	./ serverpilot@blog.jgrossi.com:/srv/users/serverpilot/apps/blog-staging/
+	./ serverpilot@blog.jgrossi.com:/srv/users/serverpilot/apps/blog/
