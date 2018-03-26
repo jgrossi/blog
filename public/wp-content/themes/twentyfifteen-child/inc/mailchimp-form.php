@@ -1,6 +1,6 @@
 <?php 
 
-if ( is_single() ) {
+if ( is_single() || is_page() ) {
 	$query = new WP_Query( array ( 
 		'post_type' => 'mc4wp-form',
 		'posts_per_page' => 1,
