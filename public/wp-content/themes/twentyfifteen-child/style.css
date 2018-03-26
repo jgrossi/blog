@@ -4,7 +4,7 @@ Description: Twenty Fifteen Child Theme
 Author: Junior Grossi
 Author URI: https://blog.jgrossi.com
 Template: twentyfifteen
-Version: 1.0.0
+Version: 1.0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
@@ -119,6 +119,55 @@ Text Domain: twenty-fifteen-child
     margin-bottom: 1.8em;
     color: #707070;
     color: rgba(51, 51, 51, 0.7)
+}
+
+/* MailChimp Form */
+
+#mailchimp {
+    margin-top: 2em;
+    padding: 6%;
+    background: #f7f7f7;
+    border: 1px solid rgba(51, 51, 51, 0.1);
+}
+
+#mailchimp .small-text {
+    font-size: 15px;
+    font-size: 1.5rem;
+}
+
+#mailchimp input[type="email"] {
+    background: #fff;
+    margin-bottom: 1em;
+    max-width: 100%;
+    border-color: rgba(51, 51, 51, 0.2);
+}
+
+/* Response */
+
+.mc4wp-response {
+    margin-top: 1em;
+}
+
+.mc4wp-response p {
+    margin: 0;
+    color: #fff;
+}
+
+.mc4wp-response .mc4wp-alert {
+    padding: 6%;
+    background: #c09853;
+}
+
+.mc4wp-response .mc4wp-success {
+    background: #468847;
+}
+
+.mc4wp-response .mc4wp-notice {
+    background: #3a87ad;
+}
+
+.mc4wp-response .mc4wp-error {
+    background: #CD5C5C;
 }
 
 
