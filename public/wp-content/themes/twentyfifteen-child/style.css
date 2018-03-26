@@ -4,7 +4,7 @@ Description: Twenty Fifteen Child Theme
 Author: Junior Grossi
 Author URI: https://blog.jgrossi.com
 Template: twentyfifteen
-Version: 1.0.1
+Version: 1.0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
@@ -144,16 +144,13 @@ Text Domain: twenty-fifteen-child
 
 /* Response */
 
-.mc4wp-response {
-    margin-top: 1em;
-}
-
 .mc4wp-response p {
     margin: 0;
     color: #fff;
 }
 
 .mc4wp-response .mc4wp-alert {
+    margin-top: 1em;
     padding: 6%;
     background: #c09853;
 }
