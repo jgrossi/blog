@@ -71,10 +71,12 @@ function my_theme_post_date($show_updated = false)
  */
 function add_mailpoet_form_after_post_content( $content )
 {
-	if (is_single()) {
-		$content .= do_shortcode('[mailpoet_form id="2"]');
-	}
+	global $post;
 
+	if (in_the_loop() && is_single() && $post->post_type == 'post') {
+		$content .= do_shortcode('[mailpoet_form id="2"]');	
+	}
+	
 	return $content;
 }
 add_filter( 'the_content', 'add_mailpoet_form_after_post_content' );
