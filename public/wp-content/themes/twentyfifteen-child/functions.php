@@ -51,19 +51,31 @@ function twentyfifteen_post_thumbnail() {
 
 /**
  * Display the post published date and updated date if present.
- *
- * @author Junior Grossi
  */
-function my_theme_post_date( $show_updated = false )
+function my_theme_post_date($show_updated = false)
 {
 	$published = get_the_date();
 	$updated = get_the_modified_date();
 	?>
 	<div class="post-date">
-		Published on <?php echo $published; ?>.
-		<?php if ( $show_updated && strtotime( $updated ) > strtotime( $published ) ): ?>
-			Updated on <?php echo $updated; ?>.
+		Published on <?php echo $published ?>.
+		<?php if ($show_updated && strtotime($updated) > strtotime($published)): ?>
+			Updated on <?php echo $updated ?>.
 		<?php endif; ?>
 	</div>
 	<?php
 }
+
+/**
+ * Show the MailPoet Form #2 after all posts
+ */
+function add_mailpoet_form_after_post_content( $content )
+{
+	if (is_single()) {
+		$content .= do_shortcode('[mailpoet_form id="2"]');
+	}
+
+	return $content;
+}
+add_filter( 'the_content', 'add_mailpoet_form_after_post_content' );
+

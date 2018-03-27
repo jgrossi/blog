@@ -4,7 +4,7 @@ Description: Twenty Fifteen Child Theme
 Author: Junior Grossi
 Author URI: https://blog.jgrossi.com
 Template: twentyfifteen
-Version: 1.0.2
+Version: 1.0.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
@@ -121,50 +121,33 @@ Text Domain: twenty-fifteen-child
     color: rgba(51, 51, 51, 0.7)
 }
 
-/* MailChimp Form */
+/* MailPoet Form */
 
-#mailchimp {
+.entry-content div.mailpoet_form {
     margin-top: 2em;
-    padding: 6%;
+    padding: 1.6842em 1.6842em 0 1.6842em;
     background: #f7f7f7;
     border: 1px solid rgba(51, 51, 51, 0.1);
 }
 
-#mailchimp .small-text {
+.entry-content .mailpoet_form .mailpoet_text {
+    background: #fff;
+}
+
+.entry-content .mailpoet_form .mailpoet_paragraph {
     font-size: 15px;
     font-size: 1.5rem;
 }
 
-#mailchimp input[type="email"] {
-    background: #fff;
+.mailpoet_form .parsley-errors-list, .mailpoet_form .mailpoet_paragraph {
+    line-height: 1.5 !important;
+}
+
+.mailpoet_form .mailpoet_text_label {
     margin-bottom: 1em;
-    max-width: 100%;
-    border-color: rgba(51, 51, 51, 0.2);
 }
 
-/* Response */
-
-.mc4wp-response p {
-    margin: 0;
-    color: #fff;
+.mailpoet_form .mailpoet_text {
+    width: 100% !important;
 }
-
-.mc4wp-response .mc4wp-alert {
-    margin-top: 1em;
-    padding: 6%;
-    background: #c09853;
-}
-
-.mc4wp-response .mc4wp-success {
-    background: #468847;
-}
-
-.mc4wp-response .mc4wp-notice {
-    background: #3a87ad;
-}
-
-.mc4wp-response .mc4wp-error {
-    background: #CD5C5C;
-}
-
 
