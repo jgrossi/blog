@@ -54,6 +54,10 @@ function twentyfifteen_post_thumbnail() {
  */
 function my_theme_post_date($show_updated = false)
 {
+	global $post;
+
+	if ($post->post_type != 'post') return;
+
 	$published = get_the_date();
 	$updated = get_the_modified_date();
 	?>
